@@ -28,6 +28,7 @@ install_flatpak_apps() {
 		"com.pojtinger.felicitas.Sessions"
 		"app.zen_browser.zen"
 		"org.gnome.Builder"
+		"it.mijorus.gearlever"
 	)
 	for app in "${apps[@]}"; do
 		run_step "Installing $app" "flatpak install -y flathub $app"
